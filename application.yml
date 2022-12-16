@@ -1,0 +1,71 @@
+properties:
+  input_dir: "C:/Workspace/processore_listini/listini/input"
+  output_dir: "C:/Workspace/processore_listini/listini/output"
+  imported_dir: "C:/Workspace/processore_listini/listini/importati"
+  header:
+    - CodArticolo
+    - CodEan
+    - Descraarticolo
+    - unitamisura
+    - unitamisura2
+    - unitamisuraSec
+    - Coefficiente
+    - Costo
+    - Prezzo
+    - CodiceIva
+    - Classea1
+    - Classea2
+    - Classea3
+    - Classea4
+    - Classea5
+    - qtaPerConf
+    - qtaPellet
+    - Peso
+    - quantitauser01
+    - quantitauser02
+    - quantitauser03
+    - quantitauser04
+    - quantitauser05
+    - campouser1
+    - campouser2
+    - campouser3
+    - campouser4
+    - campouser5
+  fornitorimapper:
+    atlas:
+      codice: CodArticolo
+      articolo: CodEan
+      descrizione: Descraarticolo
+      prezzi: Prezzo
+      scatola: unitamisura
+    mirage:
+      codice: codArticolo
+      art: codEan
+      descrizione: descraarticolo
+      prezzi: prezzo
+      um: unitamisura
+      aumento_perc:
+    flaminia:
+      CodArt: CodArticolo
+      EAN: CodEan
+      DesArt1: Descraarticolo
+      PrezzoListino: Prezzo
+    chaffoteaux:
+      EAN: CodEan
+      CODICE PRODOTTO: CodArticolo
+      DESCRIZIONE PRODOTTO: Descraarticolo
+      Listino 07.2021: Prezzo
+      aumento_perc: 10
+    cordivari:
+      Descrizione Articolo 1: Descraarticolo
+      Descrizione Articolo 2: Descraarticolo
+      qty x CF: qtaPerConf
+      Listino: Prezzo
+      aumento_perc: 10
+    fap:
+      'CODICE / CODE': CodArticolo
+      'ARTICOLO / ITEM': Descraarticolo
+      'U.V. / UNIT': unitamisura
+      'Eur < PLT': Prezzo
+      'MQ / BOX': qtaPerConf
+      'BOX / PLT': qtaPellet
