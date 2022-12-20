@@ -89,7 +89,7 @@ def execute():
     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     fh.setFormatter(formatter)
     logger.addHandler(fh)
-    with open('application.yml') as f:
+    with open('application.yml', 'r', encoding='utf8') as f:
         logger.debug('Inizio importazione')
         data = yaml.load(f, Loader=yaml.FullLoader)
         global input_dir

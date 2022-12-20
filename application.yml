@@ -66,6 +66,6 @@ properties:
       'CODICE / CODE': CodArticolo
       'ARTICOLO / ITEM': Descraarticolo
       'U.V. / UNIT': unitamisura
-      'Eur < PLT': Prezzo
+      '€ < PLT': Prezzo
       'MQ / BOX': qtaPerConf
       'BOX / PLT': qtaPellet
